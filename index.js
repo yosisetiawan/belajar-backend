@@ -10,6 +10,10 @@ app.use(bodyParser.json())
 const userRoutes = require('./routes/userRoutes')
 const productRoutes = require('./routes/productRoutes')
 
+
+app.get('/', (req, res) => {
+    res.send('Server telah jalan cuuuk !!!')
+})
 app.use(userRoutes)
 app.use(productRoutes)
 
